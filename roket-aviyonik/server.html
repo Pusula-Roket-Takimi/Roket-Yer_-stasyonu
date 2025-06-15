@@ -43,6 +43,7 @@
         <tr><td>Boylam</td><td id="boylam">-</td></tr>
         <tr><td>Enlem</td><td id="enlem">-</td></tr>
         <tr><td>GPS İrtifa</td><td id="gps_irtifa">-</td></tr>
+        <tr><td>Basınç</td><td id="basinc">-</td></tr>
         <tr><td>Basınç İrtifa</td><td id="basinc_irtifa">-</td></tr>
         <tr><td>Gyro X</td><td id="gyro_x">-</td></tr>
         <tr><td>Gyro Y</td><td id="gyro_y">-</td></tr>
@@ -146,6 +147,7 @@ connectBtn.addEventListener('click', async () => {
     boylam: document.getElementById('boylam'),
     enlem: document.getElementById('enlem'),
     gps_irtifa: document.getElementById('gps_irtifa'),
+    basinc: document.getElementById('basinc'),
     basinc_irtifa: document.getElementById('basinc_irtifa'),
     gyro_x: document.getElementById('gyro_x'),
     gyro_y: document.getElementById('gyro_y'),
@@ -176,6 +178,7 @@ connectBtn.addEventListener('click', async () => {
     if ('BOYLAM' in data) elements.boylam.textContent = data.BOYLAM;
     if ('ENLEM' in data) elements.enlem.textContent = data.ENLEM;
     if ('GPS_IRTIFA' in data) elements.gps_irtifa.textContent = data.GPS_IRTIFA;
+    if ('BASINC' in data) elements.basinc.textContent = data.BASINC;
     if ('BASINC_IRTIFA' in data) elements.basinc_irtifa.textContent = data.BASINC_IRTIFA;
     if ('GYRO_X' in data) elements.gyro_x.textContent = data.GYRO_X;
     if ('GYRO_Y' in data) elements.gyro_y.textContent = data.GYRO_Y;
